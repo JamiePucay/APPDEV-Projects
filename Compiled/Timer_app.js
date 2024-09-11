@@ -8,7 +8,7 @@ startBtn.addEventListener('click', () => {
             timer--
             value.textContent = timer
         } else {
-            print(countdown)
+            alert(countdown)
         }
-    }, 1000)
+    }, 100)
 });
