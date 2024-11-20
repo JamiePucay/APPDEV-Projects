@@ -51,7 +51,7 @@ export default function Form() {
 
     return(
         <>
-        <h4>Student Attendance Information Form:</h4>
+        <h1><center>Student Attendance Information Form:</center></h1>
         <div className="form-container">
             ID Number: <input type="text" value={id} onChange={handleIdChange}></input><br /><br />
             Name: <input type="text" value={name} onChange={handleNameChange}></input><br /><br />

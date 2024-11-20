@@ -1,15 +1,18 @@
 import Header from './Header';
 import Footer from './Footer';
 import Form from './Form';
-function App() {
 
+function App() {
   return (
     <>
-    <Header />
-    <Form />
-    <Footer />
+      <Header />
+      <div className="main-content"> {/* Wrap content with main-content class */}
+        <Form />
+      </div>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
