@@ -1,0 +1,47 @@
+
+/*for navigation*/
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #b157a2
+}
+
+h1, p {
+  text-align: center;
+}
+
+
+
+
+/* for Games*/
+.list-container {
+  background-color: rgb(105, 59, 59);
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #352525;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
