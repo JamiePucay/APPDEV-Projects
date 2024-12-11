@@ -1,0 +1,391 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #282A36;
+  color: #FF79C6;
+  overflow-x: hidden;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #282A36;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid #FF79C6;
+}
+
+.headerlist {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.headerlist li {
+  display: inline;
+}
+
+.headerlist a {
+  text-decoration: none;
+  color: #FF79C6;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.headerlist a:hover {
+  color: #FFFFFF;
+}
+
+/* Content Box Styles */
+.about, .developer-container, .home, .productdiv, .reviews, .companyReview {
+  max-width: 800px;
+  margin: 80px auto 20px; /* Leaves space for the fixed header */
+  background-color: #393B4D;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+  color: #FF79C6;
+}
+
+p, ul, li {
+  line-height: 1.6;
+  color: #E0E0E0;
+}
+
+button {
+  background-color: #FF79C6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #282A36;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #E773B9;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #FF79C6;
+  background-color: #282A36;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+textarea::placeholder {
+  color: #AAAAAA;
+}
+
+/* Developer Profiles */
+.developer-profile {
+  margin-bottom: 20px;
+  background-color: #393B4D;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.developer-photo {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #FF79C6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+/* Footer or Additional Sections */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #282A36;
+  color: #FF79C6;
+  margin-top: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #44475A;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-section .tagline {
+  font-size: 1.2rem;
+  color: #E0E0E0;
+  font-style: italic;
+}
+
+/* About Company Section */
+.about-company {
+  margin-top: 20px;
+}
+
+.about-company h2 {
+  margin-bottom: 10px;
+}
+
+.about-company p {
+  margin-bottom: 10px;
+}
+
+/* What We Offer Section */
+.what-we-offer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.what-we-offer li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #393B4D;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.what-we-offer strong {
+  color: #FF79C6;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #44475A;
+  border-radius: 10px;
+}
+
+.call-to-action button {
+  margin-top: 10px;
+}
+
+/* Reviews Section */
+.reviews .review, .companyReview .review {
+  background-color: #393B4D;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reviews textarea, .companyReview textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reviews button, .companyReview button {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+/* Products Section */
+.productsdiv {
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #393B4D;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.productsdiv h1 {
+  text-align: center;
+  color: #FF79C6;
+  margin-bottom: 20px;
+}
+
+.productsdiv ul {
+  list-style: none;
+  padding: 0;
+}
+
+.productsdiv li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #44475A;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.productsdiv li:hover {
+  background-color: #52576E;
+}
+
+.productsdiv a {
+  color: #FF79C6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.productsdiv a:hover {
+  color: #FFFFFF;
+}
+
+/* Products Section - Portrait Boxes */
+.productsdiv {
+  margin: 80px auto;
+  max-width: 1200px; /* Adjust the width for multiple boxes in a row */
+  padding: 20px;
+  background-color: #393B4D;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.productsdiv h1 {
+  text-align: center;
+  color: #FF79C6;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for Product Cards */
+.productsdiv .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between boxes */
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* Individual Product Card */
+.productsdiv .product-card {
+  background-color: #44475A;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productsdiv .product-card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Product Title */
+.productsdiv .product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FF79C6;
+  margin-bottom: 10px;
+}
+
+/* Product Description */
+.productsdiv .product-description {
+  color: #E0E0E0;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Product Link */
+.productsdiv .product-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #FF79C6;
+  color: #282A36;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.productsdiv .product-link:hover {
+  background-color: #E773B9;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/* Company Profile Section */
+.company-profile {
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #393B4D;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.company-profile h1, .company-profile h2, .company-profile h3 {
+  color: #FF79C6;
+  margin-bottom: 10px;
+}
+
+.company-profile p {
+  color: #E0E0E0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.company-profile ul {
+  list-style: none;
+  padding: 0;
+  color: #E0E0E0;
+}
+
+.company-profile li {
+  margin-bottom: 10px;
+}
+
+.position {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #44475A;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.position h3 {
+  color: #FF79C6;
+  margin-bottom: 5px;
+}
+
+.position p {
+  color: #E0E0E0;
+  line-height: 1.6;
+}
+
