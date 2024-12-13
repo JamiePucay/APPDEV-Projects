@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -46,7 +46,7 @@ nav {
 }
 
 /* Content Box Styles */
-.about, .developer-container, .home, .productdiv, .reviews, .companyReview {
+.about, .developer-container, .home, .productdiv, .reviews, .companyReview, .resume-container {
   max-width: 800px;
   margin: 80px auto 20px; /* Leaves space for the fixed header */
   background-color: #393B4D;
@@ -109,6 +109,51 @@ textarea::placeholder {
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
+
+/* Employee Styles */
+.resume-profile {
+  margin-bottom: 20px;
+  background-color: #393B4D;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee-photo {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Skills and Contact Info */
+.skills-technologies,
+.contact-info {
+  margin-top: 20px;
+}
+
+.skills-technologies ul,
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-technologies li,
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #FF79C6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #FFFFFF;
+}
+
 
 /* Links */
 a {
@@ -334,6 +379,102 @@ footer {
   color: #FFFFFF;
 }
 
+/* Product Image Styling */
+.productsdiv .product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.productsdiv .product-card:hover .product-image {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+
+
+/* Product */
+.product-box,
+.product-details-box,
+.reviews-box,
+.company-review-box {
+    border: 1px solid #282A36;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #44475A;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product title and description */
+.product-box h1 {
+    margin-bottom: 8px;
+    color: #E773B9;
+}
+
+.product-box p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.manual-description h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #E773B9;
+}
+
+.manual-description p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Product details section */
+.product-details-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #44475A;
+}
+
+
+.product-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-info-table th, .product-info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.product-info-table th {
+    font-weight: bold;
+}
+
+.product-info-table ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+
+
+
+
+
 
 
 
@@ -389,3 +530,26 @@ footer {
   line-height: 1.6;
 }
 
+/* Employee List */
+.employee-list {
+  display: flex;
+  flex-direction: column; /* Aligns buttons vertically */
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+.employee-list .position {
+  text-align: left; /* Aligns text inside the button to the left */
+  background-color: #44475A;
+  color: #E0E0E0;
+  border: none; /* Removes default border for buttons */
+  padding: 10px 20px; /* Adds padding for better spacing */
+  border-radius: 8px; /* Rounds the corners of the buttons */
+  cursor: pointer; /* Changes cursor to pointer for better UX */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adds smooth hover effect */
+}
+
+.employee-list .position:hover {
+  background-color: #FF79C6; /* Changes background color on hover */
+  color: #393B4D; /* Changes text color on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Adds shadow effect on hover */
+}
